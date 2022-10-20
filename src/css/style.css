@@ -1,0 +1,153 @@
+body {
+    background: hsl(233, 47%, 7%);
+    
+}
+
+/* MAIN */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    height: 95vh;
+}
+
+.container .card-container {
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin: 20px;
+}
+
+.container .card-container .text-info {
+    padding: 50px;
+}
+
+.container .title, .container .title span {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.container .title span {
+    color: hsl(277, 64%, 61%);
+}
+
+.container .description {
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.container .info-numbers {
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.container .info-numbers li{
+    color: hsla(0, 0%, 100%, 0.6);
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.container .info-numbers li span{
+    color: hsla(0, 0%, 100%);
+    font-size: 20px;
+    display: flex;
+    letter-spacing: 0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.card-container .image img{
+    max-width: 450px;
+}
+
+.card-container .image .squad {
+    width: 450px;
+    height: 371px;
+    position: absolute;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .5;
+}
+
+
+.attribution {
+    background: hsl(233, 47%, 7%);
+    height: 5vh;
+    font-size: 11px;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+}
+
+@media(max-width:960px) {
+    .container .card-container {
+        flex-direction: column;
+        width: 450px;
+        transition: .2s ease-in-out;
+        text-align: center;
+    }
+
+    .container .card-container .text-info {
+        padding: 50px 30px 30px 30px;
+    }
+
+    .container .title, .container .title span{
+        font-size: 32px;
+    }
+    .container .card-container .text-info .description {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .container .card-container .info-numbers {
+        display: block;
+        text-align: center;
+    }
+
+    .container .card-container .info-numbers li {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .container .card-container .info-numbers li span {
+        justify-content: center;
+        font-size: 28px;
+    }
+
+    .card-container .text-info {
+        order: 2;
+    }
+
+    .card-container .image img {
+        order: -1;
+    }
+}
+
+@media(max-width: 475px) {
+    .container .card-container {
+        width: 375px;
+    }
+
+    .card-container .image img, .card-container .image .squad  {
+        width: 375px;
+        margin-top: 15px;
+        height: 309px;
+    }
+
+}
